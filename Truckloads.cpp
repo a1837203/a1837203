@@ -1,6 +1,6 @@
-#include "TruckLoads.h"
+#include "Truckloads.h"
 
-       int TruckLoads::TruckLoads_Number(int val)
+       int Trucklads::Truckloads_Number(int val)
 
        {
 
@@ -8,7 +8,7 @@
 
        if(val == 1 || val == 2) return 1;
 
-       return TruckLoads_Number(val-1) + TruckLoads_Number(val-2);
+       return Truckloads_Number(val-1) + Truckloads_Number(val-2);
 
        }
 

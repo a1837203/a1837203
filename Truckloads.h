@@ -1,9 +1,9 @@
-class TruckLoads
+class Truckloads
 
     {
 
        public:
 
-       int TruckLoads_Number(int val);
+       int Truckloads_Number(int val);
 
     };

@@ -5,21 +5,16 @@
     #include "EfficientTruckloads.h"
 
     #include "Truckloads.h"
-
-
-    using namespace std;
-
    
+    using namespace std;
 
     int main()
 
     {
 
-      
-
        Reverse rev1;
 
-       TruckLoads fibval;
+       Truckloads fibval;
 
        EfficientTruckloads efficien;
 
@@ -67,15 +62,17 @@
 
     }
 
+  
 
 
-#include " EfficientTruckloads.h"
+
+#include "EfficientTruckloads.h"
 
 
 
     using namespace std;
 
-     int  EfficientTruckloads:: EfficientTruckloads_Num(int value)
+     int EfficientTruckloads::EfficientTruckloads_Num(int value)
 
        {
 
@@ -85,10 +82,31 @@
 
                
 
-           table1[value] =  EfficientTruckloads_Num(value - 1) +  EfficientTruckloads_Num(value- 2);
+           table1[value] = EfficientTruckloads_Num(value - 1) + EfficientTruckloads_Num(value- 2);
 
          
 
            return table1[value];
 
        }
+
+
+
+#include <vector>
+
+    using namespace std;
+
+    class EfficientTruckloads
+
+    {
+
+       vector<int> table1;
+
+       public:
+
+           EfficientTruckloads() : table1(20) { }
+
+       int EfficientTruckloads_Num(int val);
+
+    };
+
